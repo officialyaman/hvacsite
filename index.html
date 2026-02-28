@@ -1,20 +1,19 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vertex Pro HVAC</title>
-  <meta name="description" content="Vertex Pro HVAC — Commercial & Residential Heating and Cooling in the GTA. Fast response, licensed & insured. Get a quote today."/>
+  <title>Vertex Smart Pro HVAC</title>
+  <meta name="description" content="Vertex Smart Pro HVAC — Commercial & Residential Heating and Cooling in the GTA. Fast response, licensed & insured. Get a quote today."/>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <!-- Sticky Header -->
   <header class="topbar">
-    <a class="brand" href="#home" aria-label="Vertex Pro Home">
+    <a class="brand" href="index.html" aria-label="Vertex Smart Pro Home">
       <span class="brand-mark">V</span>
-      <span class="brand-text">Vertex <b>Pro</b></span>
+      <span class="brand-text">Vertex <b>Smart Pro</b></span>
     </a>
 
     <div class="top-actions">
@@ -37,6 +36,7 @@
     <a href="#reviews">Reviews</a>
     <a href="#quote">Get Quote</a>
     <a href="#contact">Contact</a>
+    <a href="privacy.html">Privacy</a>
   </nav>
 
   <!-- HERO -->
@@ -62,7 +62,7 @@
     </div>
   </main>
 
-  <!-- OFFERS (blue band like your example) -->
+  <!-- OFFERS -->
   <section id="offers" class="band">
     <div class="container band-grid">
       <div class="band-copy">
@@ -92,17 +92,16 @@
         </div>
 
         <a class="btn btn-light" href="#quote">Claim Offer</a>
-        <p class="fineprint">Offer text is customizable — we can change it to your real promo.</p>
+        <p class="fineprint">Offer text is customizable — change this to your real promo.</p>
       </div>
 
       <div class="band-card" aria-label="Equipment image card">
-        <!-- Replace with your own image later -->
-        <img src="assets/offer.jpg" alt="HVAC equipment in a mechanical room" onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback');"/>
+        <img src="assets/offer.jpg" alt="HVAC equipment in a mechanical room"
+             onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback');"/>
         <div class="fallback">
           <div class="fallback-icon">🧰</div>
           <div class="fallback-text">
             Add your photo at <b>assets/offer.jpg</b>
-            <span>(or I can pick better stock images for you)</span>
           </div>
         </div>
       </div>
@@ -150,9 +149,7 @@
     <div class="container split">
       <div class="split-copy">
         <h2>Commercial HVAC</h2>
-        <p>
-          Built for property managers, restaurants, clinics, and offices. We handle:
-        </p>
+        <p>Built for property managers, restaurants, clinics, and offices. We handle:</p>
         <ul class="bullets">
           <li>Rooftop unit service & replacement (RTU)</li>
           <li>Preventative maintenance programs</li>
@@ -161,12 +158,13 @@
         </ul>
         <div class="split-actions">
           <a class="btn btn-quote" href="#quote">Get Quote</a>
-          <a class="btn btn-ghost" href="#contact">Talk to Us</a>
+          <a class="btn btn-ghost dark-ghost" href="#contact">Talk to Us</a>
         </div>
       </div>
 
       <div class="split-media">
-        <img src="assets/commercial.jpg" alt="Technician working on rooftop HVAC unit" onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback');"/>
+        <img src="assets/commercial.jpg" alt="Technician working on rooftop HVAC unit"
+             onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback');"/>
         <div class="fallback">
           <div class="fallback-icon">🏢</div>
           <div class="fallback-text">
@@ -181,7 +179,7 @@
   <section id="reviews" class="section">
     <div class="container">
       <div class="section-head center">
-        <div class="stars" aria-label="4.9 star rating">★★★★★</div>
+        <div class="stars" aria-label="5 star rating">★★★★★</div>
         <h2>Trusted by Happy Customers</h2>
         <p>Replace these with your real Google reviews whenever you’re ready.</p>
       </div>
@@ -225,33 +223,38 @@
 
   <!-- QUOTE -->
   <section id="quote" class="section quote">
-    <div class="container split quote-split">
-      <div class="quote-copy">
+    <div class="container">
+      <div class="section-head center">
         <h2>Get Quote</h2>
-        <p>
-          Fill this out and we’ll reply ASAP. Keep it short — the faster it is, the more leads you get.
-        </p>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdrtjf7iQR_DnP2RDdWEqTFARNr4zxE4cal7-xIoAl-ETCtIQ/viewform?embedded=true" width="640" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <p>Fill this out and we’ll contact you ASAP.</p>
+      </div>
 
-        <div class="form-toast" id="toast" role="status" aria-live="polite"></div>
-      </form>
+      <div class="form-wrap">
+        <iframe
+          class="gform"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdrtjf7iQR_DnP2RDdWEqTFARNr4zxE4cal7-xIoAl-ETCtIQ/viewform?embedded=true"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0">
+          Loading…
+        </iframe>
+      </div>
     </div>
-  <section class="section">
-  </div>
   </section>
-  <!-- CONTACT / FOOTER -->
+
+  <!-- FOOTER -->
   <footer id="contact" class="footer">
     <div class="container footer-grid">
       <div>
-        <div class="footer-brand">Vertex <b>Pro</b></div>
+        <div class="footer-brand">Vertex <b>Smart Pro</b></div>
         <p class="footer-text">Commercial & Residential HVAC • GTA</p>
-        <a href="privacy.html">Privacy Policy</a>
+        <p><a href="privacy.html">Privacy Policy</a></p>
       </div>
 
       <div>
         <h4>Contact</h4>
         <p><a href="tel:+10000000000">+1 (000) 000-0000</a></p>
-        <p><a href="mailto:quotes@vertexpro.demo">quotes@vertexpro.demo</a></p>
+        <p><a href="mailto:quotes@vertexprohvac.ca">quotes@vertexprohvac.ca</a></p>
       </div>
 
       <div>
@@ -262,8 +265,7 @@
     </div>
 
     <div class="container footer-bottom">
-      <small>© <span id="year"></span> Vertex Pro HVAC. All rights reserved.</small>
-    
+      <small>© <span id="year"></span> Vertex Smart Pro HVAC. All rights reserved.</small>
     </div>
   </footer>
 
