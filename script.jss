@@ -49,20 +49,3 @@ function tick() {
 }
 tick();
 setInterval(tick, 1000);
-
-// Demo form submit (shows a success message)
-// Later we can connect to Formspree/Netlify to email you + save to Google Sheets
-const quoteForm = document.getElementById("quoteForm");
-const toast = document.getElementById("toast");
-
-quoteForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  toast.style.display = "block";
-  toast.textContent = "✅ Thanks! Your request was received. We’ll contact you shortly.";
-
-  quoteForm.reset();
-  setTimeout(() => {
-    toast.style.display = "none";
-  }, 6000);
-});
