@@ -1,0 +1,347 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vertex Pro HVAC</title>
+  <meta name="description" content="Vertex Pro HVAC — Commercial & Residential Heating and Cooling in the GTA. Fast response, licensed & insured. Get a quote today."/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Sticky Header -->
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Vertex Pro Home">
+      <span class="brand-mark">V</span>
+      <span class="brand-text">Vertex <b>Pro</b></span>
+    </a>
+
+    <div class="top-actions">
+      <!-- Replace phone number -->
+      <a class="btn btn-call" href="tel:+10000000000">Call Now</a>
+      <a class="btn btn-quote" href="#quote">Get Quote</a>
+
+      <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu" id="burgerBtn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Slide-down Menu -->
+  <nav class="menu" id="menu" aria-label="Site menu">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#commercial">Commercial</a>
+    <a href="#offers">Offers</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#quote">Get Quote</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HERO -->
+  <main id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner">
+      <p class="kicker">Serving the GTA • Licensed & Insured</p>
+      <h1>Top-Rated HVAC Services<br/>for Homes & Businesses</h1>
+      <p class="sub">
+        Repairs • Installations • Maintenance • Rooftop Units • Heat Pumps
+      </p>
+
+      <div class="hero-cta">
+        <a class="btn btn-quote btn-lg" href="#quote">Get Quote</a>
+        <a class="btn btn-ghost btn-lg" href="tel:+10000000000">Call Now</a>
+      </div>
+
+      <div class="trust-row" aria-label="Trust points">
+        <div class="trust-pill">Fast Response</div>
+        <div class="trust-pill">Upfront Pricing</div>
+        <div class="trust-pill">Warranty-Backed Work</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- OFFERS (blue band like your example) -->
+  <section id="offers" class="band">
+    <div class="container band-grid">
+      <div class="band-copy">
+        <h2>Limited Time Offer</h2>
+        <p>
+          Book a maintenance visit and get a <b>free system inspection</b>.
+          Perfect before peak season.
+        </p>
+
+        <div class="countdown" role="group" aria-label="Countdown timer">
+          <div class="timebox">
+            <div class="time" id="dd">00</div>
+            <div class="label">Days</div>
+          </div>
+          <div class="timebox">
+            <div class="time" id="hh">00</div>
+            <div class="label">Hours</div>
+          </div>
+          <div class="timebox">
+            <div class="time" id="mm">00</div>
+            <div class="label">Mins</div>
+          </div>
+          <div class="timebox">
+            <div class="time" id="ss">00</div>
+            <div class="label">Secs</div>
+          </div>
+        </div>
+
+        <a class="btn btn-light" href="#quote">Claim Offer</a>
+        <p class="fineprint">Offer text is customizable — we can change it to your real promo.</p>
+      </div>
+
+      <div class="band-card" aria-label="Equipment image card">
+        <!-- Replace with your own image later -->
+        <img src="assets/offer.jpg" alt="HVAC equipment in a mechanical room" onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback');"/>
+        <div class="fallback">
+          <div class="fallback-icon">🧰</div>
+          <div class="fallback-text">
+            Add your photo at <b>assets/offer.jpg</b>
+            <span>(or I can pick better stock images for you)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Services</h2>
+        <p>Everything you need to keep your property comfortable and efficient.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Repairs</h3>
+          <p>No cooling, weak airflow, leaks, strange noises — we diagnose and fix fast.</p>
+          <a href="#quote" class="link">Get Quote →</a>
+        </article>
+
+        <article class="card">
+          <h3>Installation</h3>
+          <p>Furnaces, A/C, heat pumps, rooftop units — sized properly, installed cleanly.</p>
+          <a href="#quote" class="link">Get Quote →</a>
+        </article>
+
+        <article class="card">
+          <h3>Maintenance</h3>
+          <p>Seasonal tune-ups to reduce breakdowns, improve efficiency, and extend lifespan.</p>
+          <a href="#quote" class="link">Get Quote →</a>
+        </article>
+
+        <article class="card">
+          <h3>Indoor Air Quality</h3>
+          <p>Filters, humidifiers, airflow balancing — breathe cleaner, feel better.</p>
+          <a href="#quote" class="link">Get Quote →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMERCIAL -->
+  <section id="commercial" class="section alt">
+    <div class="container split">
+      <div class="split-copy">
+        <h2>Commercial HVAC</h2>
+        <p>
+          Built for property managers, restaurants, clinics, and offices. We handle:
+        </p>
+        <ul class="bullets">
+          <li>Rooftop unit service & replacement (RTU)</li>
+          <li>Preventative maintenance programs</li>
+          <li>Emergency troubleshooting</li>
+          <li>Mechanical room checks</li>
+        </ul>
+        <div class="split-actions">
+          <a class="btn btn-quote" href="#quote">Get Quote</a>
+          <a class="btn btn-ghost" href="#contact">Talk to Us</a>
+        </div>
+      </div>
+
+      <div class="split-media">
+        <img src="assets/commercial.jpg" alt="Technician working on rooftop HVAC unit" onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback');"/>
+        <div class="fallback">
+          <div class="fallback-icon">🏢</div>
+          <div class="fallback-text">
+            Add your photo at <b>assets/commercial.jpg</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="section">
+    <div class="container">
+      <div class="section-head center">
+        <div class="stars" aria-label="4.9 star rating">★★★★★</div>
+        <h2>Trusted by Happy Customers</h2>
+        <p>Replace these with your real Google reviews whenever you’re ready.</p>
+      </div>
+
+      <div class="review-grid">
+        <article class="review">
+          <div class="review-top">
+            <div class="avatar">M</div>
+            <div>
+              <div class="name">Michael C.</div>
+              <div class="meta">Mississauga, ON</div>
+            </div>
+          </div>
+          <p>Quick response and fixed our AC the same day. Clean work and clear pricing.</p>
+        </article>
+
+        <article class="review">
+          <div class="review-top">
+            <div class="avatar">S</div>
+            <div>
+              <div class="name">Sarah T.</div>
+              <div class="meta">Brampton, ON</div>
+            </div>
+          </div>
+          <p>Very professional. Explained everything, gave options, and the install looks great.</p>
+        </article>
+
+        <article class="review">
+          <div class="review-top">
+            <div class="avatar">D</div>
+            <div>
+              <div class="name">David P.</div>
+              <div class="meta">Toronto, ON</div>
+            </div>
+          </div>
+          <p>Our rooftop unit was down — they diagnosed fast and got us running again.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section id="quote" class="section quote">
+    <div class="container split quote-split">
+      <div class="quote-copy">
+        <h2>Get Quote</h2>
+        <p>
+          Fill this out and we’ll reply ASAP. Keep it short — the faster it is, the more leads you get.
+        </p>
+
+        <div class="mini-list">
+          <div class="mini"><span>✓</span> Quick response</div>
+          <div class="mini"><span>✓</span> Upfront options</div>
+          <div class="mini"><span>✓</span> Clean, safe work</div>
+        </div>
+
+        <div class="note">
+          Want photo uploads + email delivery? I can connect this form to Formspree/Netlify in 2 minutes.
+        </div>
+      </div>
+
+      <form class="quote-form" id="quoteForm">
+        <div class="row">
+          <label>
+            Full Name*
+            <input name="name" required placeholder="Your name" />
+          </label>
+          <label>
+            Phone*
+            <input name="phone" required placeholder="(###) ###-####" inputmode="tel" />
+          </label>
+        </div>
+
+        <div class="row">
+          <label>
+            Email
+            <input name="email" type="email" placeholder="you@email.com" />
+          </label>
+          <label>
+            City / Area
+            <input name="area" placeholder="Mississauga / GTA" />
+          </label>
+        </div>
+
+        <div class="row">
+          <label>
+            Service Needed*
+            <select name="service" required>
+              <option value="">Select…</option>
+              <option>Repair</option>
+              <option>Installation</option>
+              <option>Maintenance</option>
+              <option>Inspection</option>
+              <option>Commercial (RTU / Contract)</option>
+            </select>
+          </label>
+
+          <label>
+            Equipment
+            <select name="equipment">
+              <option value="">Select…</option>
+              <option>Furnace</option>
+              <option>Air Conditioner</option>
+              <option>Heat Pump</option>
+              <option>Rooftop Unit (RTU)</option>
+              <option>Boiler</option>
+              <option>Other</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          Describe the issue / job*
+          <textarea name="message" required placeholder="Example: AC not cooling, condo unit, need service this week."></textarea>
+        </label>
+
+        <!-- Optional: photo upload (works visually, but needs a backend service to receive files) -->
+        <label class="upload">
+          Upload a photo (optional)
+          <input type="file" id="photo" accept="image/*" />
+          <span class="upload-hint">Tip: thermostat, model sticker, or the problem area.</span>
+        </label>
+
+        <button class="btn btn-quote btn-block" type="submit">Send Quote Request</button>
+        <p class="fineprint">
+          This demo form shows a confirmation message. When you’re ready, we’ll connect it to email/Google Sheets.
+        </p>
+
+        <div class="form-toast" id="toast" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">Vertex <b>Pro</b></div>
+        <p class="footer-text">Commercial & Residential HVAC • GTA</p>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:+10000000000">+1 (000) 000-0000</a></p>
+        <p><a href="mailto:quotes@vertexprohvac.com">quotes@vertexprohvac.com</a></p>
+      </div>
+
+      <div>
+        <h4>Hours</h4>
+        <p>Mon–Sat: 8am–8pm</p>
+        <p>Emergency: Call Anytime</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <small>© <span id="year"></span> Vertex Pro HVAC. All rights reserved.</small>
+      <small class="muted">Built for speed • mobile-first</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
